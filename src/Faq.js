@@ -4,6 +4,8 @@ import Questions from './Questions.js';
 function Faq() {
     return(
         <section className='faq'>
+            <h1>Frequently Asked Questions</h1>
+            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
             <Questions 
                 question = "What is Bookmark?"
                 answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis"
@@ -24,7 +26,7 @@ function Faq() {
                 answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis"
             />
 
-            
+            <button>More Info</button>
         </section>
     )
 }

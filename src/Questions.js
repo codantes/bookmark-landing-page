@@ -5,6 +5,7 @@ function Questions(props){
     function answerToggle() {
         setAnswerState(!answerState);
     }
+    
     const arrowStyle = {
         transform : (answerState)? "rotate(180deg)" : "none"
     }

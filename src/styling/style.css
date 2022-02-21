@@ -94,6 +94,7 @@ header{
 
 .hero-banner article h1{
     font-size: 35px;
+    font-weight: 500;
 }
 
 .hero-banner article p{
@@ -133,6 +134,7 @@ header{
 
 .features article h1{
     font-size: 30px;
+    font-weight: 500;
 }
 
 .features article p{
@@ -153,12 +155,13 @@ header{
     border-bottom: 1px solid hsl(229, 8%, 60%);
 }
 
-.tab-articles img{
-    width: 100%;
-}
-
 .tab-articles{
     margin-top: 4rem;
+}
+
+.tab-articles img{
+    width: 80%;
+    margin:0 2rem;
 }
 
 .tab-articles button{
@@ -171,6 +174,23 @@ header{
     color: white;
 }
 
+.downloads article{
+    text-align: center;
+}
+
+.downloads article h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.downloads article p{
+    color: hsl(229, 8%, 60%);
+    margin: 0 2rem;
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+
 .downloads{
     margin: 6rem 0;
 }
@@ -179,8 +199,8 @@ header{
     text-align: center;
     margin: 2.5rem;
     box-shadow: 2px 11px 40px -18px rgba(0,0,0,0.26);
--webkit-box-shadow: 2px 11px 40px -18px rgba(0,0,0,0.26);
--moz-box-shadow: 2px 11px 40px -18px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 2px 11px 40px -18px rgba(0,0,0,0.26);
+    -moz-box-shadow: 2px 11px 40px -18px rgba(0,0,0,0.26);
     border-radius: 10px;
     padding: 1.5rem;
 }
@@ -206,6 +226,7 @@ header{
 
 .faq h1{
     font-size: 30px;
+    font-weight: 500;
 }
 
 .faq p{
@@ -312,4 +333,164 @@ footer{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+}
+
+
+@media screen and (min-width: 900px){
+    .main-menu{
+        z-index: 0;
+        position: unset;
+        width: unset;
+        height: unset;
+        background:  none;
+        top: unset;
+        left: unset;
+    }
+
+    .main-menu, nav{
+        display: flex;
+        align-items: center;
+    }
+
+    nav{
+        margin: 0 8rem;
+    }
+
+    .main-menu li{
+        margin: 0 1rem;
+    }
+
+    .main-menu li a{
+        color: black;
+        font-size: 18px;
+    }
+
+    .main-menu .menu-header, .menu-btn{
+        display: none;
+    }
+
+    .menu-login-btn button{
+        border: none;
+        background: hsl(0, 94%, 66%);
+        font-size: 18px;
+        height: 2rem;
+        padding-inline: 2rem;
+    }
+
+    .hero-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 0 6rem;
+    }
+
+    .hero-banner article{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        text-align: left;
+    }
+
+    .hero-banner article p{
+        margin-inline: 1rem;
+    }
+
+    .hero-banner article h1 {
+        margin-inline: 1rem;
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .hero-banner img{
+        grid-column-start: 2;
+    }
+
+    .features h1{
+        font-size: 45px;
+    }
+
+    .features p{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .feature-menu{
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 1px solid hsl(229, 8%, 60%);
+    }
+
+    .feature-menu li{
+        border: none;
+        margin-inline: 3rem;
+    }
+
+    .features .tab-articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-inline: 6rem;
+    }
+
+    .tab-articles article{
+        text-align: left;
+    }
+    
+    .tab-articles article p {
+        margin: 1rem; 
+        width: 100%;
+    }
+
+    .tab-articles img{
+        width: 80%;
+    }
+
+    .tab-articles article h1{
+        margin-inline: 1rem;
+        font-weight: 500;
+    }
+
+    .tab-articles button{
+        width: 40%;
+        margin: 0 1rem;
+    }
+
+    .downloads article h1{
+        font-size: 40px;
+    }
+
+    .downloads article p{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .faq{
+        width: 50%;
+        margin: 4rem auto;
+    }
+
+    .signup form{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    .signup form input{
+        width: 85%;
+        margin-inline: 1rem;
+    }
+
+    footer .footer-nav{
+        display: flex;
+    }
+
+    footer .footer-nav li{
+        margin-inline: 2rem;
+    }
 }

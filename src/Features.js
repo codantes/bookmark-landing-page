@@ -75,12 +75,14 @@ function Features(){
             {
                 (tabState.tab1) &&
                 <section className="tab-articles">
-                    <article>
+
                         <img src="./images/illustration-features-tab-1.svg" alt="" />
+                    <article>
                         <h1>Bookmark in one click</h1>
                         <p>
                             Organize your bookmarks however you like. Our simple drag-and-drop interface give you complete control over how you manage your favourite sites.
                         </p>
+                        <button>More Info</button>
                     </article>
                 </section>
             }
@@ -88,8 +90,9 @@ function Features(){
             {
                 (tabState.tab2) &&
                 <section className="tab-articles">
-                    <article>
+                    
                         <img src="./images/illustration-features-tab-2.svg" alt="" />
+                    <article>
                         <h1>Intelligent search</h1>
                         <p>
                         Our powerful search feature will help you find saved sites in no time at all. 
@@ -104,8 +107,9 @@ function Features(){
             {
                 (tabState.tab3) &&
                 <section className="tab-articles">
-                    <article>
+
                         <img src="./images/illustration-features-tab-3.svg" alt="" />
+                    <article>
                         <h1>Share your bookmarks</h1>
                         <p>
                         Easily share your bookmarks and collections with others. Create a shareable 
